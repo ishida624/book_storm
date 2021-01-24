@@ -1,0 +1,3873 @@
+{
+	"info": {
+		"_postman_id": "0707dadc-67f2-4793-a32d-daa68e69aa5d",
+		"name": "book_store_local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=9pm",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listBookStore",
+						"opentime"
+					],
+					"query": [
+						{
+							"key": "week",
+							"value": "Mon",
+							"description": "輸入Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+						},
+						{
+							"key": "time",
+							"value": "9pm",
+							"description": "輸入 時間+am or pm"
+						}
+					]
+				},
+				"description": "input week and time ,output opening book stroe list"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=gagraf",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Mon",
+									"description": "輸入Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+								},
+								{
+									"key": "time",
+									"value": "gagraf",
+									"description": "輸入 時間+am or pm"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:42:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:42:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"time format is wrong\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=dsafewaf&time=9pm",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "dsafewaf",
+									"description": "輸入Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+								},
+								{
+									"key": "time",
+									"value": "9pm",
+									"description": "輸入 時間+am or pm"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:44:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:44:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"week  format is wrong\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=9pm",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Mon"
+								},
+								{
+									"key": "time",
+									"value": "9pm"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listBookStore",
+						"opentime",
+						"dayOfWeek"
+					],
+					"query": [
+						{
+							"key": "week",
+							"value": "Sun",
+							"description": "輸入week = Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+						}
+					]
+				},
+				"description": "List all book stores that are open on a day of the week, at a certain time"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"dayOfWeek"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Sun",
+									"description": "輸入week = Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\"\n    },\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    },\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Author Attic\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    },\n    {\n        \"storeName\": \"Pick-a-Book\"\n    },\n    {\n        \"storeName\": \"Bookland\"\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sundsafweafe",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"dayOfWeek"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Sundsafweafe",
+									"description": "輸入week = Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:02:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:02:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"week  format is wrong\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listBookStore",
+						"opentime",
+						"filterByTotalTime"
+					],
+					"query": [
+						{
+							"key": "dayOrWeek",
+							"value": "Sun",
+							"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+						},
+						{
+							"key": "totalTime",
+							"value": "10",
+							"description": "輸入 totalTime = (integer)"
+						},
+						{
+							"key": "moreOrLess",
+							"value": "more",
+							"description": "輸入 moreOrLess = more or less"
+						}
+					]
+				},
+				"description": "List all book stores that are open on a day of the week, at a certain time"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sun",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "10",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=fdsafw&moreOrLess=more",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sun",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "fdsafw",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"totalTime value must be float\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sunsafewaf&totalTime=10&moreOrLess=more",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sunsafewaf",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "10",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:08:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:08:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"dayOrWeek  format is wrong\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=fewaf",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sun",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "10",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "fewaf",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/listBooks?price=10&orderBy=bookName",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listBooks"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "10",
+							"description": "輸入 price = {number} (type = float)"
+						},
+						{
+							"key": "orderBy",
+							"value": "bookName",
+							"description": "輸入 orderBy = price or bookName"
+						}
+					]
+				},
+				"description": "List all books that are within a price range, sorted by price or alphabetically"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBooks?price=10faewf&orderBy=bookName",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBooks"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "10faewf",
+									"description": "輸入 price = {number} (type = float)"
+								},
+								{
+									"key": "orderBy",
+									"value": "bookName",
+									"description": "輸入 orderBy = price or bookName"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:20:20 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:20:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be double or integer\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBooks"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "8"
+								},
+								{
+									"key": "orderBy",
+									"value": "price"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 330,\n        \"bookName\": \"Learning Elixir\",\n        \"price\": 6.15,\n        \"bookStore_id\": 33,\n        \"created_at\": \"2021-01-21T05:44:16.000000Z\",\n        \"updated_at\": \"2021-01-21T05:44:16.000000Z\"\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBooks?price=10&orderBy=bookNamefawef",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBooks"
+							],
+							"query": [
+								{
+									"key": "price",
+									"value": "10",
+									"description": "輸入 price = {number} (type = float)"
+								},
+								{
+									"key": "orderBy",
+									"value": "bookNamefawef",
+									"description": "輸入 orderBy = price or bookName"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:20:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:20:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"orderBy value must be price or bookName\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listBookStore",
+						"numberOfBook",
+						"price"
+					],
+					"query": [
+						{
+							"key": "numberOfBook",
+							"value": "10",
+							"description": "輸入 numberOfBook = {number} (type = integer)"
+						},
+						{
+							"key": "moreOrLess",
+							"value": "more",
+							"description": "輸入 moreOrLess = more or less"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"description": "輸入 price = = {number} (type = float)"
+						}
+					]
+				},
+				"description": "List all book stores that have more or less than x number of books within a price range"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=morefewa&price=15",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"numberOfBook",
+								"price"
+							],
+							"query": [
+								{
+									"key": "numberOfBook",
+									"value": "10",
+									"description": "輸入 numberOfBook = {number} (type = integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "morefewa",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "price",
+									"value": "15",
+									"description": "輸入 price = = {number} (type = float)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"numberOfBook",
+								"price"
+							],
+							"query": [
+								{
+									"key": "numberOfBook",
+									"value": "10",
+									"description": "輸入 numberOfBook = {number} (type = integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "price",
+									"value": "15",
+									"description": "輸入 price = = {number} (type = float)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:40:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:40:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"[\\\"Look Inna Book\\\",\\\"new store name\\\"]\",\n        \"number_of_books\": 13\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\",\n        \"number_of_books\": 11\n    },\n    {\n        \"storeName\": \"Bookland\",\n        \"number_of_books\": 12\n    },\n    {\n        \"storeName\": \"Uptown Books\",\n        \"number_of_books\": 14\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15asef",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"numberOfBook",
+								"price"
+							],
+							"query": [
+								{
+									"key": "numberOfBook",
+									"value": "10",
+									"description": "輸入 numberOfBook = {number} (type = integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "price",
+									"value": "15asef",
+									"description": "輸入 price = = {number} (type = float)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be float\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10afewf&moreOrLess=more&price=15",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"numberOfBook",
+								"price"
+							],
+							"query": [
+								{
+									"key": "numberOfBook",
+									"value": "10afewf",
+									"description": "輸入 numberOfBook = {number} (type = integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "price",
+									"value": "15",
+									"description": "輸入 price = = {number} (type = float)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:40:58 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:40:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"numberOfBook value type must be integer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basemen",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"searchBookAndBookStore"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "bookStore",
+							"description": "輸入search = book or bookStore"
+						},
+						{
+							"key": "name",
+							"value": "Basemen",
+							"description": "輸入 name = {bookName} or {storeName}"
+						}
+					]
+				},
+				"description": "List all book stores that have more or less than x number of books within a price range"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basementfdsa",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"searchBookAndBookStore"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "bookStore",
+									"description": "輸入search = book or bookStore"
+								},
+								{
+									"key": "name",
+									"value": "Basementfdsa",
+									"description": "輸入 name = {bookName} or {storeName}"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:56:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:56:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"search not found\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStorefdsaf&name=Basement",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"searchBookAndBookStore"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "bookStorefdsaf",
+									"description": "輸入search = book or bookStore"
+								},
+								{
+									"key": "name",
+									"value": "Basement",
+									"description": "輸入 name = {bookName} or {storeName}"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:56:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:56:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"search value must be book or bookStore\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basement",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"searchBookAndBookStore"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "bookStore",
+									"description": "輸入search = book or bookStore"
+								},
+								{
+									"key": "name",
+									"value": "Basement",
+									"description": "輸入 name = {bookName} or {storeName}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:55:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:55:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"The Book Basement\"\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10 Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"searchBookAndBookStore"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "book",
+									"description": "輸入search = book or bookStore"
+								},
+								{
+									"key": "name",
+									"value": "Ruby",
+									"description": "輸入 name = {bookName} or {storeName}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:45:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:45:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"bookName\": \"Hacking With Ruby: Ruby And Rails For The Real World\"\n    },\n    {\n        \"bookName\": \"Head First Rails: A Learner's Companion To Ruby On Rails\"\n    },\n    {\n        \"bookName\": \"Mama Ruby (a Mama Ruby Novel)\"\n    },\n    {\n        \"bookName\": \"Metaprogramming Ruby 2: Program Like The Ruby Pros (facets Of Ruby)\"\n    },\n    {\n        \"bookName\": \"Rails Antipatterns: Best Practice Ruby On Rails Refactoring\"\n    },\n    {\n        \"bookName\": \"Refactoring: Ruby Edition: Ruby Edition (addison-wesley Professional Ruby Series)\"\n    },\n    {\n        \"bookName\": \"Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)\"\n    },\n    {\n        \"bookName\": \"Ruby For Rails: Ruby Techniques For Rails Developers\"\n    },\n    {\n        \"bookName\": \"Ruby Holler\"\n    },\n    {\n        \"bookName\": \"Ruby On Rails Essential Training\"\n    },\n    {\n        \"bookName\": \"Ruby On Rails Tutorial: Learn Web Development With Rails\"\n    },\n    {\n        \"bookName\": \"Ruby On Rails Tutorial: Learn Web Development With Rails (2nd Edition) (addison-wesley Professional Ruby)\"\n    },\n    {\n        \"bookName\": \"Ruby On Rails Video: Learn Rails By Example\"\n    },\n    {\n        \"bookName\": \"Ruby Phrasebook\"\n    },\n    {\n        \"bookName\": \"Ruby Red (the Ruby Red Trilogy)\"\n    },\n    {\n        \"bookName\": \"Ruby River\"\n    },\n    {\n        \"bookName\": \"Ruby, Ruby: A Murder Mystery\"\n    },\n    {\n        \"bookName\": \"Ruby: Learn Ruby In 24 Hours Or Less - A Beginner's Guide To Learning Ruby Programming Now (ruby, Ruby Programming, Ruby Course)\"\n    },\n    {\n        \"bookName\": \"Ruby: The Autobiography\"\n    },\n    {\n        \"bookName\": \"Ruby: Unexpected Love... (ruby Trilogy)\"\n    },\n    {\n        \"bookName\": \"Sandy Ruby\"\n    },\n    {\n        \"bookName\": \"Where's Ruby? (max And Ruby)\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userList",
+						"ByHighestTransactionAmount"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "2019-12-10",
+							"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+						},
+						{
+							"key": "dateTo",
+							"value": "2020-01-01",
+							"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+						},
+						{
+							"key": "limit",
+							"value": "2",
+							"description": "輸入 limit = {number} (type = integer)"
+						}
+					]
+				},
+				"description": "The top x users by total transaction amount within a date range"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userList",
+								"ByHighestTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-12-10",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"description": "輸入 limit = {number} (type = integer)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Edward Gonzalez\",\n        \"sum\": 12.45\n    },\n    {\n        \"name\": \"Gary Coffin\",\n        \"sum\": 10.95\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateTo=2020-01-01&limit=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userList",
+								"ByHighestTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-12-10",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )",
+									"disabled": true
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"description": "輸入 limit = {number} (type = integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:42 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from field is required.\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10asdfawefawfe&dateTo=2020-01-01&limit=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userList",
+								"ByHighestTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-12-10asdfawefawfe",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"description": "輸入 limit = {number} (type = integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2fsafasdf",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userList",
+								"ByHighestTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-12-10",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "limit",
+									"value": "2fsafasdf",
+									"description": "輸入 limit = {number} (type = integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:21 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:28:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"inputLimit must be integer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"totalTransactionAmount"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "2019-01-01",
+							"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+						},
+						{
+							"key": "dateTo",
+							"value": "2020-01-01",
+							"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+						}
+					]
+				},
+				"description": "The total number and dollar value of transactions that happened within a date range"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01asdfeaf&dateTo=2020-01-01",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"totalTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01asdfeaf",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:56:07 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:56:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"totalTransactionAmount"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-01",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:55:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:55:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"NumberOfTransaction\": 33,\n        \"sumDollar\": 383.67\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"popularStore"
+					],
+					"query": [
+						{
+							"key": "transactionValueOrNumber",
+							"value": "number",
+							"description": "輸入transactionValueOrNumber = number or value (依照交易總額或是數量做排名)"
+						}
+					]
+				},
+				"description": "The most popular book stores by transaction volume, either by number of transactions or transaction dollar value"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=value",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"popularStore"
+							],
+							"query": [
+								{
+									"key": "transactionValueOrNumber",
+									"value": "value",
+									"description": "輸入transactionValueOrNumber = number or value (依照交易總額或是數量做排名)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:59:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:59:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\",\n        \"sum\": 130.87\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"popularStore"
+							],
+							"query": [
+								{
+									"key": "transactionValueOrNumber",
+									"value": "number",
+									"description": "輸入transactionValueOrNumber = number or value (依照交易總額或是數量做排名)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:00:06 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:00:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\",\n        \"count\": 11\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=valueasdf",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"popularStore"
+							],
+							"query": [
+								{
+									"key": "transactionValueOrNumber",
+									"value": "valueasdf",
+									"description": "輸入transactionValueOrNumber = number or value (依照交易總額或是數量做排名)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:59:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 08:59:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"transactionValueOrNumber value must be value or number\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"numberOfUserByTransaction"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "2019-01-01",
+							"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+						},
+						{
+							"key": "dateTo",
+							"value": "2020-01-04",
+							"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+						},
+						{
+							"key": "moreOrLess",
+							"value": "more",
+							"description": "輸入 moreOrLess = more or less"
+						},
+						{
+							"key": "transactionSum",
+							"value": "10",
+							"description": "輸入 transactionSun = {number}(type=integer)"
+						}
+					]
+				},
+				"description": "The total number and dollar value of transactions that happened within a date range"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01faesf&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfUserByTransaction"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01faesf",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10",
+									"description": "輸入 transactionSun = {number}(type=integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=lessfdsaf&transactionSum=10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfUserByTransaction"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "lessfdsaf",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10",
+									"description": "輸入 transactionSun = {number}(type=integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:09:37 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:09:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfUserByTransaction"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10",
+									"description": "輸入 transactionSun = {number}(type=integer)"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"numberOfUser\": 14\n    }\n]"
+				},
+				{
+					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=less&transactionSum=10sadf",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"numberOfUserByTransaction"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2019-01-01",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "less",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10sadf",
+									"description": "輸入 transactionSun = {number}(type=integer)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:12:18 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 09:12:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "55"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"transactionSum value type must be float\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/buyBook",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyBook"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Edith Johnson",
+							"description": "輸入userName = {userName}(type = string)",
+							"disabled": true
+						},
+						{
+							"key": "bookName",
+							"value": "Ruby: The Autobiography",
+							"description": "輸入bookName = {bookName}(type = string)",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Process a user purchasing a book from a book store, handling all relevant data changes in an atomic transaction"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"Edith Johnsonfasfewafwaef\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/buyBook",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:22 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"userName is wrong\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography faseafwaefwafewfwaf\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/buyBook",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:40 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"bookName is wrong\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/buyBook",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:06 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:13:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"transaction successfully\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!         if cashBalance not enough",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/buyBook",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyBook"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:14:09 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:14:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"transaction error\"\n}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8000/api/updateUserBookData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\":[\"gill\",\"wang\"],\n    \"bookName\":[\"Ruby!\",\"new bookName\"],\n    \"price\":100,\n    \"storeName\":[\"Look Inna Book\",\"new store name\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/updateUserBookData",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateUserBookData"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Edith Johnson",
+							"disabled": true
+						},
+						{
+							"key": "bookName",
+							"value": "Ruby!",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Edit book store name, book name, book price and user name\nThe most popular book stores by transaction volume, either by number of transactions or transaction dollar value\n\n request body 使用json\n\n    #輸入userName = [{要更改的userName},{要改成什麼userName}]\n    #輸入bookName = [{要更改的bookName},{要改成什麼bookName}]\n    #輸入price = {number} (type = float)\n    #輸入storeName = [{要更改的storeName},{要改成什麼storeName}]"
+			},
+			"response": [
+				{
+					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":[\"Edith Johnson\",\"gill\"],\n    \"bookName\":[\"Elixir\",\"test123\"],\n    \"price\":100,\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateUserBookData"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby!",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:51:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:51:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"update successfully\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookName\":[\"test123\",\"abcd\"],\n    \"price\":\"100fewaf\",\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateUserBookData"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby!",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:56:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:56:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be double or integer\"\n}"
+				},
+				{
+					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":[\"Edith Johnson\",\"gill\"],\n    \"bookName\":[\"Elixir\",\"test123\"],\n    \"price\":100,\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"updateUserBookData"
+							],
+							"query": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"disabled": true
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby!",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:52:08 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 13:52:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"user not found\"\n}"
+				}
+			]
+		}
+	]
+}
