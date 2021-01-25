@@ -22,7 +22,7 @@ users 和 purchaseHistory 是一對多關係，bookStore 和 books 是一對多�
 Import [this](book_store_api.postman_collection.json) json file to Postman
 
 - 線上 API 文件
-  https://documenter.getpostman.com/view/11454990/TW6tLVpM#49385051-cf9f-4970-9870-438ed060766d
+  https://documenter.getpostman.com/view/11454990/TW6tNAzj
 
 ## Import Data Commands (required)
 
@@ -34,7 +34,10 @@ Import [this](book_store_api.postman_collection.json) json file to Postman
 ## Test Coverage Report(optional)
 
 check report [here](#test-coverage-reportoptional)
+未完成
 
 ## Demo Site Url (optional)
 
-demo ready on [heroku](#demo-site-url-optional)
+demo ready on [GCP](https://bookstore.gill.gq)
+
+已再 GCP 上佈署完畢
