@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "0707dadc-67f2-4793-a32d-daa68e69aa5d",
-		"name": "book_store_local",
+		"_postman_id": "1d0ae699-b0d3-4694-98d9-df5a2eafddd2",
+		"name": "book_store_api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+			"name": "列出在特定日期時間開放的所有書店",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -18,14 +18,13 @@
 					"urlencoded": []
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=9pm",
+					"raw": "https://bookstore.gill.gq/api/listBookStore/opentime?week=Mon&time=9pm",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"listBookStore",
@@ -48,7 +47,7 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+					"name": "response 400 time format is wrong",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -57,14 +56,13 @@
 							"urlencoded": []
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=gagraf",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime?week=Mon&time=gagraf",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -133,7 +131,7 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"time format is wrong\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
+					"name": "response 200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -142,14 +140,95 @@
 							"urlencoded": []
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=dsafewaf&time=9pm",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime?week=Mon&time=9pm",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Mon"
+								},
+								{
+									"key": "time",
+									"value": "9pm"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    }\n]"
+				},
+				{
+					"name": "response 400 ,week  format is wrong",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime?week=dsafewaf&time=9pm",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
 							"path": [
 								"api",
 								"listBookStore",
@@ -216,106 +295,22 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"week  format is wrong\"\n}"
-				},
-				{
-					"name": "127.0.0.1:8000/api/ListBookStore/opentime?week=Fri&time=9pm",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime?week=Mon&time=9pm",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"listBookStore",
-								"opentime"
-							],
-							"query": [
-								{
-									"key": "week",
-									"value": "Mon"
-								},
-								{
-									"key": "time",
-									"value": "9pm"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 06:27:24 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "59"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+			"name": "列出一周中的某一天營業的所有書店",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"listBookStore",
@@ -334,96 +329,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+					"name": "response 400 , week  format is wrong",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/dayOfWeek?week=Sundsafweafe",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
-							"path": [
-								"api",
-								"listBookStore",
-								"opentime",
-								"dayOfWeek"
-							],
-							"query": [
-								{
-									"key": "week",
-									"value": "Sun",
-									"description": "輸入week = Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "58"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\"\n    },\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    },\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Author Attic\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    },\n    {\n        \"storeName\": \"Pick-a-Book\"\n    },\n    {\n        \"storeName\": \"Bookland\"\n    }\n]"
-				},
-				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sundsafweafe",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -486,23 +403,98 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"week  format is wrong\"\n}"
+				},
+				{
+					"name": "response 20",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/dayOfWeek?week=Sun",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"dayOfWeek"
+							],
+							"query": [
+								{
+									"key": "week",
+									"value": "Sun",
+									"description": "輸入week = Mon, Tues, Wed, Thurs, Fri, Sat, Sun"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:01:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\"\n    },\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    },\n    {\n        \"storeName\": \"Uptown Books\"\n    },\n    {\n        \"storeName\": \"Turn the Page\"\n    },\n    {\n        \"storeName\": \"Author Attic\"\n    },\n    {\n        \"storeName\": \"Undercover Books\"\n    },\n    {\n        \"storeName\": \"Pick-a-Book\"\n    },\n    {\n        \"storeName\": \"Bookland\"\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+			"name": "列出每天或每週營業超過或少於x小時的所有書店",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+					"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"listBookStore",
@@ -531,193 +523,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"name": "response 400, dayOrWeek  format is wrong",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sunsafewaf&totalTime=10&moreOrLess=more",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
-							"path": [
-								"api",
-								"listBookStore",
-								"opentime",
-								"filterByTotalTime"
-							],
-							"query": [
-								{
-									"key": "dayOrWeek",
-									"value": "Sun",
-									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
-								},
-								{
-									"key": "totalTime",
-									"value": "10",
-									"description": "輸入 totalTime = (integer)"
-								},
-								{
-									"key": "moreOrLess",
-									"value": "more",
-									"description": "輸入 moreOrLess = more or less"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "56"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    }\n]"
-				},
-				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=fdsafw&moreOrLess=more",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"listBookStore",
-								"opentime",
-								"filterByTotalTime"
-							],
-							"query": [
-								{
-									"key": "dayOrWeek",
-									"value": "Sun",
-									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
-								},
-								{
-									"key": "totalTime",
-									"value": "fdsafw",
-									"description": "輸入 totalTime = (integer)"
-								},
-								{
-									"key": "moreOrLess",
-									"value": "more",
-									"description": "輸入 moreOrLess = more or less"
-								}
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "59"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"totalTime value must be float\"\n}"
-				},
-				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sunsafewaf&totalTime=10&moreOrLess=more",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -792,19 +609,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"dayOrWeek  format is wrong\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/opentime/dayOfWeek?week=Sun Copy",
+					"name": "response 400 , moreOrLess value must be more or less",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=fewaf",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=fewaf",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -877,23 +693,194 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
+				},
+				{
+					"name": "response 400 totalTime value must be float",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=fdsafw&moreOrLess=more",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sun",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "fdsafw",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:13:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"totalTime value must be float\"\n}"
+				},
+				{
+					"name": "response 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/listBookStore/opentime/filterByTotalTime?dayOrWeek=Sun&totalTime=10&moreOrLess=more",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"listBookStore",
+								"opentime",
+								"filterByTotalTime"
+							],
+							"query": [
+								{
+									"key": "dayOrWeek",
+									"value": "Sun",
+									"description": "輸入dayOrWeek = Mon, Tues, Wed, Thurs, Fri, Sat, Sun or allWeek"
+								},
+								{
+									"key": "totalTime",
+									"value": "10",
+									"description": "輸入 totalTime = (integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:07:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"storeName\": \"The Book Basement\"\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\"\n    },\n    {\n        \"storeName\": \"Downtown Books\"\n    }\n]"
 				}
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+			"name": "列出價格範圍內的所有書籍，按價格或字母順序排列",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/listBooks?price=10&orderBy=bookName",
+					"raw": "https://bookstore.gill.gq/api/listBooks?price=10&orderBy=price",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"listBooks"
@@ -906,7 +893,7 @@
 						},
 						{
 							"key": "orderBy",
-							"value": "bookName",
+							"value": "price",
 							"description": "輸入 orderBy = price or bookName"
 						}
 					]
@@ -915,19 +902,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+					"name": "response 400 , price value type must be double or integer",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBooks?price=10faewf&orderBy=bookName",
+							"raw": "https://bookstore.gill.gq/api/listBooks?price=10faewf&orderBy=bookName",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBooks"
@@ -995,97 +981,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be double or integer\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+					"name": "400 Bad Request ,orderBy value must be price or bookName",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
+							"raw": "https://bookstore.gill.gq/api/listBooks?price=10&orderBy=bookNamefawef",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
-							"path": [
-								"api",
-								"listBooks"
-							],
-							"query": [
-								{
-									"key": "price",
-									"value": "8"
-								},
-								{
-									"key": "orderBy",
-									"value": "price"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "59"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"id\": 330,\n        \"bookName\": \"Learning Elixir\",\n        \"price\": 6.15,\n        \"bookStore_id\": 33,\n        \"created_at\": \"2021-01-21T05:44:16.000000Z\",\n        \"updated_at\": \"2021-01-21T05:44:16.000000Z\"\n    }\n]"
-				},
-				{
-					"name": "127.0.0.1:8000/api/listBooks?price=8&orderBy=price",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/listBooks?price=10&orderBy=bookNamefawef",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBooks"
@@ -1151,91 +1058,38 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"orderBy value must be price or bookName\"\n}"
-				}
-			]
-		},
-		{
-			"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"listBookStore",
-						"numberOfBook",
-						"price"
-					],
-					"query": [
-						{
-							"key": "numberOfBook",
-							"value": "10",
-							"description": "輸入 numberOfBook = {number} (type = integer)"
-						},
-						{
-							"key": "moreOrLess",
-							"value": "more",
-							"description": "輸入 moreOrLess = more or less"
-						},
-						{
-							"key": "price",
-							"value": "15",
-							"description": "輸入 price = = {number} (type = float)"
-						}
-					]
 				},
-				"description": "List all book stores that have more or less than x number of books within a price range"
-			},
-			"response": [
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"name": "response 200 ",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=morefewa&price=15",
+							"raw": "https://bookstore.gill.gq/api/listBooks?price=8&orderBy=price",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"listBookStore",
-								"numberOfBook",
-								"price"
+								"listBooks"
 							],
 							"query": [
 								{
-									"key": "numberOfBook",
-									"value": "10",
-									"description": "輸入 numberOfBook = {number} (type = integer)"
-								},
-								{
-									"key": "moreOrLess",
-									"value": "morefewa",
-									"description": "輸入 moreOrLess = more or less"
-								},
-								{
 									"key": "price",
-									"value": "15",
-									"description": "輸入 price = = {number} (type = float)"
+									"value": "8"
+								},
+								{
+									"key": "orderBy",
+									"value": "price"
 								}
 							]
 						}
 					},
-					"status": "Bad Request",
-					"code": 400,
+					"status": "OK",
+					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -1244,11 +1098,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
+							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
+							"value": "Sun, 24 Jan 2021 07:15:29 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1280,22 +1134,63 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
+					"body": "[\n    {\n        \"id\": 330,\n        \"bookName\": \"Learning Elixir\",\n        \"price\": 6.15,\n        \"bookStore_id\": 33,\n        \"created_at\": \"2021-01-21T05:44:16.000000Z\",\n        \"updated_at\": \"2021-01-21T05:44:16.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "列出所有擁有多於或少於x本書的書店 , 列出價格範圍內書數超過或少於x的所有書店",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bookstore.gill.gq/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+					"protocol": "https",
+					"host": [
+						"bookstore",
+						"gill",
+						"gq"
+					],
+					"path": [
+						"api",
+						"listBookStore",
+						"numberOfBook",
+						"price"
+					],
+					"query": [
+						{
+							"key": "numberOfBook",
+							"value": "10",
+							"description": "輸入 numberOfBook = {number} (type = integer)"
+						},
+						{
+							"key": "moreOrLess",
+							"value": "more",
+							"description": "輸入 moreOrLess = more or less"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"description": "輸入 price = = {number} (type = float)"
+						}
+					]
 				},
+				"description": "List all book stores that have more or less than x number of books within a price range"
+			},
+			"response": [
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -1370,19 +1265,18 @@
 					"body": "[\n    {\n        \"storeName\": \"[\\\"Look Inna Book\\\",\\\"new store name\\\"]\",\n        \"number_of_books\": 13\n    },\n    {\n        \"storeName\": \"A Whole New World Bookstore\",\n        \"number_of_books\": 11\n    },\n    {\n        \"storeName\": \"Bookland\",\n        \"number_of_books\": 12\n    },\n    {\n        \"storeName\": \"Uptown Books\",\n        \"number_of_books\": 14\n    }\n]"
 				},
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"name": "400 Bad Request , moreOrLess value must be more or less",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15asef",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=morefewa&price=15",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -1397,12 +1291,12 @@
 								},
 								{
 									"key": "moreOrLess",
-									"value": "more",
+									"value": "morefewa",
 									"description": "輸入 moreOrLess = more or less"
 								},
 								{
 									"key": "price",
-									"value": "15asef",
+									"value": "15",
 									"description": "輸入 price = = {number} (type = float)"
 								}
 							]
@@ -1418,11 +1312,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+							"value": "Sun, 24 Jan 2021 07:41:10 GMT"
 						},
 						{
 							"key": "Connection",
@@ -1446,7 +1340,7 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "58"
+							"value": "59"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -1454,22 +1348,21 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be float\"\n}"
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10",
+					"name": "400 Bad Request , numberOfBook value type must be integer",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10afewf&moreOrLess=more&price=15",
+							"raw": "https://bookstore.gill.gq/api/listBookStore/numberOfBook/price?numberOfBook=10afewf&moreOrLess=more&price=15",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"listBookStore",
@@ -1542,23 +1435,108 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"numberOfBook value type must be integer\"\n}"
+				},
+				{
+					"name": "400 Bad Request , price value type must be float",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=more&price=15asef",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"listBookStore",
+								"numberOfBook",
+								"price"
+							],
+							"query": [
+								{
+									"key": "numberOfBook",
+									"value": "10",
+									"description": "輸入 numberOfBook = {number} (type = integer)"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "price",
+									"value": "15asef",
+									"description": "輸入 price = = {number} (type = float)"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Jan 2021 07:41:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be float\"\n}"
 				}
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+			"name": "按名稱搜索書店或書籍，並按與搜索詞的相關性排序",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basemen",
+					"raw": "https://bookstore.gill.gq/api/searchBookAndBookStore?search=bookStore&name=Basemen",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"searchBookAndBookStore"
@@ -1580,19 +1558,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"name": "400 Bad Request , search not found",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basementfdsa",
+							"raw": "https://bookstore.gill.gq/api/searchBookAndBookStore?search=bookStore&name=Basementfdsa",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"searchBookAndBookStore"
@@ -1660,19 +1637,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"search not found\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"name": "400 Bad Request , search value must be book or bookStore",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStorefdsaf&name=Basement",
+							"raw": "https://bookstore.gill.gq/api/searchBookAndBookStore?search=bookStorefdsaf&name=Basement",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"searchBookAndBookStore"
@@ -1740,19 +1716,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"search value must be book or bookStore\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=bookStore&name=Basement",
+							"raw": "https://bookstore.gill.gq/api/searchBookAndBookStore?search=bookStore&name=Basement",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"searchBookAndBookStore"
@@ -1820,19 +1795,18 @@
 					"body": "[\n    {\n        \"storeName\": \"The Book Basement\"\n    }\n]"
 				},
 				{
-					"name": "127.0.0.1:8000/api/listBookStore/numberOfBook/price?numberOfBook=10&moreOrLess=less&price=10 Copy",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/searchBookAndBookStore?search=book&name=Ruby",
+							"raw": "https://bookstore.gill.gq/api/searchBookAndBookStore?search=book&name=Ruby",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"searchBookAndBookStore"
@@ -1902,19 +1876,18 @@
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+			"name": "在日期範圍內按交易總額計的前x位用戶",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"raw": "https://bookstore.gill.gq/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"userList",
@@ -1942,19 +1915,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"name": "400 Bad Request , The date from is not a valid date",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+							"raw": "https://bookstore.gill.gq/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10asdfawefawfe&dateTo=2020-01-01&limit=2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"userList",
@@ -1963,7 +1935,7 @@
 							"query": [
 								{
 									"key": "dateFrom",
-									"value": "2019-12-10",
+									"value": "2019-12-10asdfawefawfe",
 									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
 								},
 								{
@@ -1979,8 +1951,8 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -1989,11 +1961,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
+							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
+							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
 						},
 						{
 							"key": "Connection",
@@ -2017,7 +1989,7 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "56"
+							"value": "55"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -2025,22 +1997,21 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"name\": \"Edward Gonzalez\",\n        \"sum\": 12.45\n    },\n    {\n        \"name\": \"Gary Coffin\",\n        \"sum\": 10.95\n    }\n]"
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"name": "400 Bad Request , The date from field is required",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateTo=2020-01-01&limit=2",
+							"raw": "https://bookstore.gill.gq/api/userList/ByHighestTransactionAmount?dateTo=2020-01-01&limit=2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"userList",
@@ -2115,19 +2086,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from field is required.\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10asdfawefawfe&dateTo=2020-01-01&limit=2",
+							"raw": "https://bookstore.gill.gq/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"userList",
@@ -2136,7 +2106,7 @@
 							"query": [
 								{
 									"key": "dateFrom",
-									"value": "2019-12-10asdfawefawfe",
+									"value": "2019-12-10",
 									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
 								},
 								{
@@ -2152,8 +2122,8 @@
 							]
 						}
 					},
-					"status": "Bad Request",
-					"code": 400,
+					"status": "OK",
+					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -2162,11 +2132,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
+							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 08:28:07 GMT"
+							"value": "Sun, 24 Jan 2021 08:27:54 GMT"
 						},
 						{
 							"key": "Connection",
@@ -2190,7 +2160,7 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "55"
+							"value": "56"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -2198,22 +2168,21 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
+					"body": "[\n    {\n        \"name\": \"Edward Gonzalez\",\n        \"sum\": 12.45\n    },\n    {\n        \"name\": \"Gary Coffin\",\n        \"sum\": 10.95\n    }\n]"
 				},
 				{
-					"name": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2",
+					"name": "400 Bad Request , inputLimit must be integer",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2fsafasdf",
+							"raw": "https://bookstore.gill.gq/api/userList/ByHighestTransactionAmount?dateFrom=2019-12-10&dateTo=2020-01-01&limit=2fsafasdf",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"userList",
@@ -2289,19 +2258,18 @@
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+			"name": "在一個日期範圍內發生的交易總數和美元價值",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"raw": "https://bookstore.gill.gq/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"totalTransactionAmount"
@@ -2323,19 +2291,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"name": "400 Bad Request , The date from is not a valid date",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01asdfeaf&dateTo=2020-01-01",
+							"raw": "https://bookstore.gill.gq/api/totalTransactionAmount?dateFrom=2019-01-01asdfeaf&dateTo=2020-01-01",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"totalTransactionAmount"
@@ -2403,19 +2370,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+							"raw": "https://bookstore.gill.gq/api/totalTransactionAmount?dateFrom=2019-01-01&dateTo=2020-01-01",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"totalTransactionAmount"
@@ -2485,19 +2451,18 @@
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+			"name": "按交易量（按交易次數或交易金額）最受歡迎的書店",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"raw": "https://bookstore.gill.gq/api/popularStore?transactionValueOrNumber=number",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"popularStore"
@@ -2514,19 +2479,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=value",
+							"raw": "https://bookstore.gill.gq/api/popularStore?transactionValueOrNumber=value",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"popularStore"
@@ -2589,19 +2553,18 @@
 					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\",\n        \"sum\": 130.87\n    }\n]"
 				},
 				{
-					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+							"raw": "https://bookstore.gill.gq/api/popularStore?transactionValueOrNumber=number",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"popularStore"
@@ -2664,19 +2627,18 @@
 					"body": "[\n    {\n        \"storeName\": \"Look Inna Book\",\n        \"count\": 11\n    }\n]"
 				},
 				{
-					"name": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=number",
+					"name": "400 Bad Request , transactionValueOrNumber value must be value or number",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/popularStore?transactionValueOrNumber=valueasdf",
+							"raw": "https://bookstore.gill.gq/api/popularStore?transactionValueOrNumber=valueasdf",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"popularStore"
@@ -2741,19 +2703,18 @@
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+			"name": "在一個日期範圍內進行高於或低於$ v的交易的用戶總數",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+					"raw": "https://bookstore.gill.gq/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"numberOfUserByTransaction"
@@ -2785,109 +2746,18 @@
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"name": "400 Bad Request , moreOrLess value must be more or less",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01faesf&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"raw": "https://bookstore.gill.gq/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=lessfdsaf&transactionSum=10",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
-							"path": [
-								"api",
-								"numberOfUserByTransaction"
-							],
-							"query": [
-								{
-									"key": "dateFrom",
-									"value": "2019-01-01faesf",
-									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
-								},
-								{
-									"key": "dateTo",
-									"value": "2020-01-04",
-									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
-								},
-								{
-									"key": "moreOrLess",
-									"value": "more",
-									"description": "輸入 moreOrLess = more or less"
-								},
-								{
-									"key": "transactionSum",
-									"value": "10",
-									"description": "輸入 transactionSun = {number}(type=integer)"
-								}
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "58"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
-				},
-				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=lessfdsaf&transactionSum=10",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
 							"path": [
 								"api",
 								"numberOfUserByTransaction"
@@ -2965,109 +2835,18 @@
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"moreOrLess value must be more or less\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
+					"name": "400 Bad Request , transactionSum value type must be float",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"raw": "https://bookstore.gill.gq/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=less&transactionSum=10sadf",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
-							"path": [
-								"api",
-								"numberOfUserByTransaction"
-							],
-							"query": [
-								{
-									"key": "dateFrom",
-									"value": "2019-01-01",
-									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
-								},
-								{
-									"key": "dateTo",
-									"value": "2020-01-04",
-									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
-								},
-								{
-									"key": "moreOrLess",
-									"value": "more",
-									"description": "輸入 moreOrLess = more or less"
-								},
-								{
-									"key": "transactionSum",
-									"value": "10",
-									"description": "輸入 transactionSun = {number}(type=integer)"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "59"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "[\n    {\n        \"numberOfUser\": 14\n    }\n]"
-				},
-				{
-					"name": "127.0.0.1:8000/api/totalTransactionAmount?dateFrom=2019&dateTo=2020",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "127.0.0.1:8000/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=less&transactionSum=10sadf",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
 							"path": [
 								"api",
 								"numberOfUserByTransaction"
@@ -3143,93 +2922,44 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"error\",\n    \"message\": \"transactionSum value type must be float\"\n}"
-				}
-			]
-		},
-		{
-			"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
 				},
-				"url": {
-					"raw": "127.0.0.1:8000/api/buyBook",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"buyBook"
-					],
-					"query": [
-						{
-							"key": "userName",
-							"value": "Edith Johnson",
-							"description": "輸入userName = {userName}(type = string)",
-							"disabled": true
-						},
-						{
-							"key": "bookName",
-							"value": "Ruby: The Autobiography",
-							"description": "輸入bookName = {bookName}(type = string)",
-							"disabled": true
-						}
-					]
-				},
-				"description": "Process a user purchasing a book from a book store, handling all relevant data changes in an atomic transaction"
-			},
-			"response": [
 				{
-					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+					"name": "400 Bad Request , The date from is not a valid date.",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":\"Edith Johnsonfasfewafwaef\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/buyBook",
+							"raw": "https://bookstore.gill.gq/api/numberOfUserByTransaction?dateFrom=2019-01-01faesf&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"buyBook"
+								"numberOfUserByTransaction"
 							],
 							"query": [
 								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"description": "輸入userName = {userName}(type = string)",
-									"disabled": true
+									"key": "dateFrom",
+									"value": "2019-01-01faesf",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
 								},
 								{
-									"key": "bookName",
-									"value": "Ruby: The Autobiography",
-									"description": "輸入bookName = {bookName}(type = string)",
-									"disabled": true
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
+								},
+								{
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10",
+									"description": "輸入 transactionSun = {number}(type=integer)"
 								}
 							]
 						}
@@ -3244,11 +2974,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:22 GMT"
+							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:22 GMT"
+							"value": "Sun, 24 Jan 2021 09:08:55 GMT"
 						},
 						{
 							"key": "Connection",
@@ -3280,138 +3010,45 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"userName is wrong\"\n}"
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"The date from is not a valid date.\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
+					"name": "200 OK",
 					"originalRequest": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography faseafwaefwafewfwaf\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/buyBook",
+							"raw": "https://bookstore.gill.gq/api/numberOfUserByTransaction?dateFrom=2019-01-01&dateTo=2020-01-04&moreOrLess=more&transactionSum=10",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"buyBook"
+								"numberOfUserByTransaction"
 							],
 							"query": [
 								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"description": "輸入userName = {userName}(type = string)",
-									"disabled": true
+									"key": "dateFrom",
+									"value": "2019-01-01",
+									"description": "輸入 dateFrom = {date} (example : 2020-11-21 )"
 								},
 								{
-									"key": "bookName",
-									"value": "Ruby: The Autobiography",
-									"description": "輸入bookName = {bookName}(type = string)",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:40 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:40 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "56"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"bookName is wrong\"\n}"
-				},
-				{
-					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "127.0.0.1:8000/api/buyBook",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"buyBook"
-							],
-							"query": [
-								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"description": "輸入userName = {userName}(type = string)",
-									"disabled": true
+									"key": "dateTo",
+									"value": "2020-01-04",
+									"description": "輸入 dateTo = {date} (example : 2020-11-21 )"
 								},
 								{
-									"key": "bookName",
-									"value": "Ruby: The Autobiography",
-									"description": "輸入bookName = {bookName}(type = string)",
-									"disabled": true
+									"key": "moreOrLess",
+									"value": "more",
+									"description": "輸入 moreOrLess = more or less"
+								},
+								{
+									"key": "transactionSum",
+									"value": "10",
+									"description": "輸入 transactionSun = {number}(type=integer)"
 								}
 							]
 						}
@@ -3426,11 +3063,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:06 GMT"
+							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:13:06 GMT"
+							"value": "Sun, 24 Jan 2021 09:08:06 GMT"
 						},
 						{
 							"key": "Connection",
@@ -3462,16 +3099,74 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"transaction successfully\"\n}"
+					"body": "[\n    {\n        \"numberOfUser\": 14\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "處理用戶從書店購買書籍的過程，處理原子交易中的所有相關數據更改",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "Edith Johnson",
+							"description": "輸入userName = {userName}(type = string)",
+							"type": "text"
+						},
+						{
+							"key": "bookName",
+							"value": "Ruby: The Autobiography ",
+							"description": "輸入bookName = {bookName}(type = string)",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
+				"url": {
+					"raw": "https://bookstore.gill.gq/api/buyBook",
+					"protocol": "https",
+					"host": [
+						"bookstore",
+						"gill",
+						"gq"
+					],
+					"path": [
+						"api",
+						"buyBook"
+					]
+				},
+				"description": "Process a user purchasing a book from a book store, handling all relevant data changes in an atomic transaction"
+			},
+			"response": [
 				{
-					"name": "127.0.0.1:8000/api/buyBook?userName=Edith Johnson&bookName=Ruby!         if cashBalance not enough",
+					"name": "400 Bad Request , userName is wrong",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":\"Edith Johnson\",\n    \"bookName\":\"Ruby: The Autobiography\"\n}",
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson fawefwaefwfe",
+									"description": "輸入userName = {userName}(type = string)",
+									"type": "text"
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3479,31 +3174,16 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/buyBook",
+							"raw": "https://bookstore.gill.gq/api/buyBook",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"buyBook"
-							],
-							"query": [
-								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"description": "輸入userName = {userName}(type = string)",
-									"disabled": true
-								},
-								{
-									"key": "bookName",
-									"value": "Ruby: The Autobiography",
-									"description": "輸入bookName = {bookName}(type = string)",
-									"disabled": true
-								}
 							]
 						}
 					},
@@ -3512,32 +3192,16 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:14:09 GMT"
+							"value": "Mon, 25 Jan 2021 07:39:11 GMT"
 						},
 						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:14:09 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
 						},
 						{
 							"key": "Cache-Control",
 							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
 						},
 						{
 							"key": "X-RateLimit-Limit",
@@ -3550,6 +3214,277 @@
 						{
 							"key": "Access-Control-Allow-Origin",
 							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"userName is wrong\"\n}"
+				},
+				{
+					"name": "400 Bad Request , bookName is wrong",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"type": "text"
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography  vasdvawf",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/buyBook",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"buyBook"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Jan 2021 07:39:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"bookName is wrong\"\n}"
+				},
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"type": "text"
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/buyBook",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"buyBook"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Jan 2021 07:25:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"transaction successfully\"\n}"
+				},
+				{
+					"name": "400 Bad Request , transaction error (when user's cashBalance not enough)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "Edith Johnson",
+									"description": "輸入userName = {userName}(type = string)",
+									"type": "text"
+								},
+								{
+									"key": "bookName",
+									"value": "Ruby: The Autobiography ",
+									"description": "輸入bookName = {bookName}(type = string)",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/buyBook",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"buyBook"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Jan 2021 07:46:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
 						}
 					],
 					"cookie": [],
@@ -3558,13 +3493,53 @@
 			]
 		},
 		{
-			"name": "127.0.0.1:8000/api/updateUserBookData",
+			"name": "編輯書店名稱，書名，書價格和用戶名",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"userName\":[\"gill\",\"wang\"],\n    \"bookName\":[\"Ruby!\",\"new bookName\"],\n    \"price\":100,\n    \"storeName\":[\"Look Inna Book\",\"new store name\"]\n}",
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName[0]",
+							"value": "Edith Johnson ",
+							"description": "輸入userName = [{要更改的userName},{要改成什麼userName}]",
+							"type": "text"
+						},
+						{
+							"key": "userName[1]",
+							"value": "gill",
+							"type": "text"
+						},
+						{
+							"key": "bookName[0]",
+							"value": "Ruby!",
+							"description": "輸入bookName = [{要更改的bookName},{要改成什麼bookName}]",
+							"type": "text"
+						},
+						{
+							"key": "bookName[1]",
+							"value": "new bookName",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"description": "輸入price = {number} (type = float)",
+							"type": "text"
+						},
+						{
+							"key": "storeName[0]",
+							"value": "Look Inna Book",
+							"description": "輸入storeName = [{要更改的storeName},{要改成什麼storeName}]",
+							"type": "text"
+						},
+						{
+							"key": "storeName[1]",
+							"value": "new storeName",
+							"type": "text"
+						}
+					],
 					"options": {
 						"raw": {
 							"language": "json"
@@ -3572,42 +3547,69 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:8000/api/updateUserBookData",
+					"raw": "https://bookstore.gill.gq/api/updateUserBookData",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"bookstore",
+						"gill",
+						"gq"
 					],
-					"port": "8000",
 					"path": [
 						"api",
 						"updateUserBookData"
-					],
-					"query": [
-						{
-							"key": "userName",
-							"value": "Edith Johnson",
-							"disabled": true
-						},
-						{
-							"key": "bookName",
-							"value": "Ruby!",
-							"disabled": true
-						}
 					]
 				},
 				"description": "Edit book store name, book name, book price and user name\nThe most popular book stores by transaction volume, either by number of transactions or transaction dollar value\n\n request body 使用json\n\n    #輸入userName = [{要更改的userName},{要改成什麼userName}]\n    #輸入bookName = [{要更改的bookName},{要改成什麼bookName}]\n    #輸入price = {number} (type = float)\n    #輸入storeName = [{要更改的storeName},{要改成什麼storeName}]"
 			},
 			"response": [
 				{
-					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"name": "400 Bad Request , user not found",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":[\"Edith Johnson\",\"gill\"],\n    \"bookName\":[\"Elixir\",\"test123\"],\n    \"price\":100,\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName[0]",
+									"value": "Edith Johnson  fsdaewaf",
+									"description": "輸入userName = [{要更改的userName},{要改成什麼userName}]",
+									"type": "text"
+								},
+								{
+									"key": "userName[1]",
+									"value": "gill",
+									"type": "text"
+								},
+								{
+									"key": "bookName[0]",
+									"value": "Ruby!",
+									"description": "輸入bookName = [{要更改的bookName},{要改成什麼bookName}]",
+									"type": "text"
+								},
+								{
+									"key": "bookName[1]",
+									"value": "new bookName",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"description": "輸入price = {number} (type = float)",
+									"type": "text"
+								},
+								{
+									"key": "storeName[0]",
+									"value": "Look Inna Book",
+									"description": "輸入storeName = [{要更改的storeName},{要改成什麼storeName}]",
+									"type": "text"
+								},
+								{
+									"key": "storeName[1]",
+									"value": "new storeName",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3615,63 +3617,34 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"raw": "https://bookstore.gill.gq/api/updateUserBookData",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"updateUserBookData"
-							],
-							"query": [
-								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"disabled": true
-								},
-								{
-									"key": "bookName",
-									"value": "Ruby!",
-									"disabled": true
-								}
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:51:41 GMT"
+							"value": "Mon, 25 Jan 2021 08:39:53 GMT"
 						},
 						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:51:41 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
 						},
 						{
 							"key": "Cache-Control",
 							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
 						},
 						{
 							"key": "X-RateLimit-Limit",
@@ -3684,19 +3657,192 @@
 						{
 							"key": "Access-Control-Allow-Origin",
 							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"user not found\"\n}"
+				},
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName[0]",
+									"value": "Edith Johnson ",
+									"description": "輸入userName = [{要更改的userName},{要改成什麼userName}]",
+									"type": "text"
+								},
+								{
+									"key": "userName[1]",
+									"value": "gill",
+									"type": "text"
+								},
+								{
+									"key": "bookName[0]",
+									"value": "Ruby!",
+									"description": "輸入bookName = [{要更改的bookName},{要改成什麼bookName}]",
+									"type": "text"
+								},
+								{
+									"key": "bookName[1]",
+									"value": "new bookName",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"description": "輸入price = {number} (type = float)",
+									"type": "text"
+								},
+								{
+									"key": "storeName[0]",
+									"value": "Look Inna Book",
+									"description": "輸入storeName = [{要更改的storeName},{要改成什麼storeName}]",
+									"type": "text"
+								},
+								{
+									"key": "storeName[1]",
+									"value": "new storeName",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookstore.gill.gq/api/updateUserBookData",
+							"protocol": "https",
+							"host": [
+								"bookstore",
+								"gill",
+								"gq"
+							],
+							"path": [
+								"api",
+								"updateUserBookData"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Jan 2021 08:38:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
 						}
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"OK\",\n    \"message\": \"update successfully\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"name": "400 Bad Request , store not found",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"bookName\":[\"test123\",\"abcd\"],\n    \"price\":\"100fewaf\",\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName[0]",
+									"value": "gill",
+									"description": "輸入userName = [{要更改的userName},{要改成什麼userName}]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "userName[1]",
+									"value": "hello",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "bookName[0]",
+									"value": "new bookName",
+									"description": "輸入bookName = [{要更改的bookName},{要改成什麼bookName}]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "bookName[1]",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"description": "輸入price = {number} (type = float)",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "storeName[0]",
+									"value": "Look Inna Book   sdfsafe",
+									"description": "輸入storeName = [{要更改的storeName},{要改成什麼storeName}]",
+									"type": "text"
+								},
+								{
+									"key": "storeName[1]",
+									"value": "new storeName",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3704,29 +3850,16 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"raw": "https://bookstore.gill.gq/api/updateUserBookData",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"updateUserBookData"
-							],
-							"query": [
-								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"disabled": true
-								},
-								{
-									"key": "bookName",
-									"value": "Ruby!",
-									"disabled": true
-								}
 							]
 						}
 					},
@@ -3735,32 +3868,16 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:56:00 GMT"
+							"value": "Mon, 25 Jan 2021 08:47:42 GMT"
 						},
 						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:56:00 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
 						},
 						{
 							"key": "Cache-Control",
 							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
 						},
 						{
 							"key": "X-RateLimit-Limit",
@@ -3768,24 +3885,76 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "58"
+							"value": "59"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
 							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"price value type must be double or integer\"\n}"
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"store not found\"\n}"
 				},
 				{
-					"name": "127.0.0.1:8000/api/updateUserBookData",
+					"name": "400 Bad Request , book not found",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"userName\":[\"Edith Johnson\",\"gill\"],\n    \"bookName\":[\"Elixir\",\"test123\"],\n    \"price\":100,\n    \"storeName\":[\"The Book Basement\",\"test321\"]\n}",
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName[0]",
+									"value": "gill",
+									"description": "輸入userName = [{要更改的userName},{要改成什麼userName}]",
+									"type": "text"
+								},
+								{
+									"key": "userName[1]",
+									"value": "hello",
+									"type": "text"
+								},
+								{
+									"key": "bookName[0]",
+									"value": "Ruby! vsav",
+									"description": "輸入bookName = [{要更改的bookName},{要改成什麼bookName}]",
+									"type": "text"
+								},
+								{
+									"key": "bookName[1]",
+									"value": "new bookName",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100",
+									"description": "輸入price = {number} (type = float)",
+									"type": "text"
+								},
+								{
+									"key": "storeName[0]",
+									"value": "Look Inna Book",
+									"description": "輸入storeName = [{要更改的storeName},{要改成什麼storeName}]",
+									"type": "text"
+								},
+								{
+									"key": "storeName[1]",
+									"value": "new storeName",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3793,29 +3962,16 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:8000/api/updateUserBookData",
+							"raw": "https://bookstore.gill.gq/api/updateUserBookData",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"bookstore",
+								"gill",
+								"gq"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"updateUserBookData"
-							],
-							"query": [
-								{
-									"key": "userName",
-									"value": "Edith Johnson",
-									"disabled": true
-								},
-								{
-									"key": "bookName",
-									"value": "Ruby!",
-									"disabled": true
-								}
 							]
 						}
 					},
@@ -3824,32 +3980,16 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
 							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:52:08 GMT"
+							"value": "Mon, 25 Jan 2021 08:42:33 GMT"
 						},
 						{
-							"key": "Date",
-							"value": "Sun, 24 Jan 2021 13:52:08 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/7.3.23-4+ubuntu18.04.1+deb.sury.org+1"
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
 						},
 						{
 							"key": "Cache-Control",
 							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
 						},
 						{
 							"key": "X-RateLimit-Limit",
@@ -3857,15 +3997,27 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "58"
+							"value": "59"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
 							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": \"error\",\n    \"message\": \"user not found\"\n}"
+					"body": "{\n    \"status\": \"error\",\n    \"message\": \"book not found\"\n}"
 				}
 			]
 		}
